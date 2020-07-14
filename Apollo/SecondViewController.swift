@@ -12,16 +12,13 @@ class SecondViewController: UIViewController {
 
     @IBOutlet weak var yellowBackground: UIView!
     
-    @IBAction func resourceMe(_ sender: Any) {
-    }
-    
-    @IBOutlet weak var yellowBackground2: UIView!
-    
-    @IBAction func gettingInvolved(_ sender: Any) {
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
+    @IBOutlet weak var yellowBackground2: UIView!
+    override func viewDidLoad() {
+           super.viewDidLoad()
+
+    }
+   
         // Do any additional setup after loading the view.
     }
     
@@ -36,4 +33,4 @@ class SecondViewController: UIViewController {
     }
     */
 
-}
+
