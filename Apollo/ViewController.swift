@@ -10,13 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var diagonalFront: UIImageView!
-    
-    @IBOutlet weak var apolloTitle: UILabel!
-    
-    @IBOutlet weak var apolloSymbol1: UIImageView!
-    
-    @IBOutlet weak var authorNames: UILabel!
     
     @IBAction func getStarted(_ sender: Any) {
     }
