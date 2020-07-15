@@ -18,6 +18,7 @@
 		6598180824BF3CDC007566AA /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6598180724BF3CDC007566AA /* FourthViewController.swift */; };
 		6598180A24BF3D24007566AA /* CounselingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6598180924BF3D24007566AA /* CounselingVC.swift */; };
 		65E33DF224BE98DE00925637 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E33DF124BE98DE00925637 /* ThirdViewController.swift */; };
+		6D16EDB524BF554600F1CEE0 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D16EDB424BF554600F1CEE0 /* LocationSearchTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		6598180724BF3CDC007566AA /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		6598180924BF3D24007566AA /* CounselingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounselingVC.swift; sourceTree = "<group>"; };
 		65E33DF124BE98DE00925637 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		6D16EDB424BF554600F1CEE0 /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				6571412024BCDFF2009C24C4 /* SceneDelegate.swift */,
 				6571412224BCDFF2009C24C4 /* ViewController.swift */,
 				6571412424BCDFF2009C24C4 /* Main.storyboard */,
+				6D16EDB424BF554600F1CEE0 /* LocationSearchTable.swift */,
 				6598180724BF3CDC007566AA /* FourthViewController.swift */,
 				6598180924BF3D24007566AA /* CounselingVC.swift */,
 				65E33DF124BE98DE00925637 /* ThirdViewController.swift */,
@@ -156,6 +159,7 @@
 				6571412324BCDFF2009C24C4 /* ViewController.swift in Sources */,
 				6571411F24BCDFF2009C24C4 /* AppDelegate.swift in Sources */,
 				6571412924BCDFF2009C24C4 /* Apollo.xcdatamodeld in Sources */,
+				6D16EDB524BF554600F1CEE0 /* LocationSearchTable.swift in Sources */,
 				6598180824BF3CDC007566AA /* FourthViewController.swift in Sources */,
 				6595CE1E24BD1B7100FAA319 /* SecondViewController.swift in Sources */,
 				6598180A24BF3D24007566AA /* CounselingVC.swift in Sources */,
