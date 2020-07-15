@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var apolloTitle: UILabel!
     
-    
     @IBOutlet weak var apolloSymbol1: UIImageView!
     
     @IBOutlet weak var authorNames: UILabel!
