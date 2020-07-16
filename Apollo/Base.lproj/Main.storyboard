@@ -300,21 +300,48 @@
             </objects>
             <point key="canvasLocation" x="1551" y="-125"/>
         </scene>
-        <!--View Controller-->
+        <!--Guides-->
         <scene sceneID="XYE-oX-34w">
             <objects>
-                <viewController id="v3g-uW-WiK" sceneMemberID="viewController">
+                <viewController id="v3g-uW-WiK" customClass="guides" customModule="Apollo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ixO-M6-ngc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tyt-8j-XnB">
+                                <rect key="frame" x="148" y="164" width="119" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Guide for Anxiety"/>
+                                <connections>
+                                    <action selector="anxie:" destination="v3g-uW-WiK" eventType="touchUpInside" id="jTF-HV-UyM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAY-9d-vgI">
+                                <rect key="frame" x="135" y="346" width="145" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Guide for Depression"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2I-Vf-h1u">
+                                <rect key="frame" x="148" y="587" width="94" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tips to Thrive"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2020-07-16 at 1.19.12 PM" translatesAutoresizingMaskIntoConstraints="NO" id="J0f-kl-9yk">
+                                <rect key="frame" x="0.0" y="80" width="414" height="594"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="DmF-Zh-8lc"/>
                     </view>
                     <navigationItem key="navigationItem" id="oge-eF-FF6"/>
+                    <connections>
+                        <outlet property="anx" destination="J0f-kl-9yk" id="1nl-8a-0CI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OKT-0E-0Xm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2551" y="-125"/>
+            <point key="canvasLocation" x="2550.7246376811595" y="-125.22321428571428"/>
         </scene>
         <!--Hotline-->
         <scene sceneID="4fK-Aj-x8x">
@@ -401,7 +428,7 @@
                                     <action selector="third:" destination="QUT-HO-Ru1" eventType="touchUpInside" id="m2M-Tw-Jxs"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Free 24/7 annonymous listening for anything that troubles you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBB-JJ-t5s">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Free 24/7 annonymous listening for anything that troubles you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBB-JJ-t5s">
                                 <rect key="frame" x="68" y="261" width="279" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
@@ -459,6 +486,7 @@
         <segue reference="Ymr-IW-RsF"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Screen Shot 2020-07-16 at 1.19.12 PM" width="394" height="1002"/>
         <image name="apollo symbol" width="225" height="225"/>
         <image name="apollo symbol without background" width="225" height="225"/>
         <image name="backward.end.fill" catalog="system" width="128" height="102"/>
