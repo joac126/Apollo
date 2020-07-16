@@ -6,16 +6,29 @@
 //  Copyright © 2020 Joana Carvalho. All rights reserved.
 //
 
+
+
+
+
+
+
+
 import UIKit
 
 class FourthViewController: UIViewController {
-    @IBAction func first(_ sender: UIButton) {
+    
+    @IBAction func first(_ sender: UIButton) { UIApplication.shared.open(URL(string:"https://www.crisistextline.org/become-a-volunteer/")! as URL, options: [:], completionHandler: nil)
     }
     
-    @IBAction func second(_ sender: Any) {
+    @IBAction func second(_ sender: Any) { UIApplication.shared.open(URL(string:"https://www.nami.org/Get-Involved/Become-a-Fundraiser")! as URL, options: [:], completionHandler: nil)
     }
     
+    @IBAction func third(_ sender: UIButton) { UIApplication.shared.open(URL(string:"https://save.org/get-involved/volunteer/")! as URL, options: [:], completionHandler: nil)
+    }
     
+    @IBAction func fourth(_ sender: UIButton) { UIApplication.shared.open(URL(string:"https://www.7cups.com")! as URL, options: [:], completionHandler: nil)
+    }
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
