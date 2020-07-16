@@ -320,14 +320,28 @@
                                 <rect key="frame" x="135" y="346" width="145" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Guide for Depression"/>
+                                <connections>
+                                    <action selector="depr:" destination="v3g-uW-WiK" eventType="touchUpInside" id="ruz-NG-0PS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2I-Vf-h1u">
                                 <rect key="frame" x="148" y="587" width="94" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Tips to Thrive"/>
+                                <connections>
+                                    <action selector="last:" destination="v3g-uW-WiK" eventType="touchUpInside" id="ezT-cA-Kj9"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2020-07-16 at 1.19.12 PM" translatesAutoresizingMaskIntoConstraints="NO" id="J0f-kl-9yk">
-                                <rect key="frame" x="0.0" y="80" width="414" height="594"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2020-07-16 at 12.01.05 PM" translatesAutoresizingMaskIntoConstraints="NO" id="gAk-h6-FHj">
+                                <rect key="frame" x="87" y="115" width="240" height="381"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GVa-NP-K0f">
+                                <rect key="frame" x="75" y="538" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MVN-mz-E8m">
+                                <rect key="frame" x="87" y="251" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -336,7 +350,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="oge-eF-FF6"/>
                     <connections>
-                        <outlet property="anx" destination="J0f-kl-9yk" id="1nl-8a-0CI"/>
+                        <outlet property="anx" destination="gAk-h6-FHj" id="Mhx-oj-uZd"/>
+                        <outlet property="dep" destination="MVN-mz-E8m" id="zgE-jb-3H8"/>
+                        <outlet property="las" destination="GVa-NP-K0f" id="XiB-WE-xNU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OKT-0E-0Xm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -486,7 +502,7 @@
         <segue reference="Ymr-IW-RsF"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="Screen Shot 2020-07-16 at 1.19.12 PM" width="394" height="1002"/>
+        <image name="Screen Shot 2020-07-16 at 12.01.05 PM" width="916" height="1182"/>
         <image name="apollo symbol" width="225" height="225"/>
         <image name="apollo symbol without background" width="225" height="225"/>
         <image name="backward.end.fill" catalog="system" width="128" height="102"/>
