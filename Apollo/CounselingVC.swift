@@ -31,6 +31,18 @@ class CounselingVC: UIViewController {
     }
     
 
+    @IBAction func CSMI(_ sender: UIButton) {
+        UIApplication.shared.open(URL(string:"https://cimhs.com")! as URL, options: [:], completionHandler:nil)
+        
+    }
+    
+    
+    @IBAction func second(_ sender: UIButton) { UIApplication.shared.open(URL(string:"https://www.7cups.com")! as URL, options: [:], completionHandler: nil)
+    }
+    
+    @IBAction func third(_ sender: UIButton) { UIApplication.shared.open(URL(string:"BetterHelp.com")! as URL, options: [:], completionHandler: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
