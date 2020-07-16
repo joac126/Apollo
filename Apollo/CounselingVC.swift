@@ -8,29 +8,66 @@
 
 import UIKit
 import MapKit
-class CounselingVC: UIViewController {
+import CoreLocation
+
+class CounselingVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     
-    //memorial health lat and long
-    // 32.0303° N, 81.0888° W
+   let locationManager = CLLocationManager()
+   let regionInMeters: Double = 10000
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mapView.delegate = self
+        checkLocationServices()
 
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = CLLocationCoordinate2D(latitude: 32.0303, longitude: -81.0888)
-        mapView.addAnnotation(annotation)
         
-        let region = MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
-        mapView.setRegion(region, animated: true)
-        
-        
-        
-        // Do any additional setup after loading the view.
     }
     
-
+    func setupLocationManager() {
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+    }
+    
+    func centerViewOnUserLocation() {
+        if let location = locationManager.location?.coordinate {
+            let region = MKCoordinateRegion.init(center: location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+            mapView.setRegion(region, animated: true)
+        }
+    }
+    
+    func checkLocationServices() {
+         if CLLocationManager.locationServicesEnabled() {
+            setupLocationManager()
+             checkLocationAuthorization()
+         } else {
+         
+         }
+    
+     }
+    
+    func checkLocationAuthorization() {
+        switch CLLocationManager.authorizationStatus() {
+        case .authorizedWhenInUse:
+            mapView.showsUserLocation = true
+            centerViewOnUserLocation()
+            locationManager.startUpdatingLocation()
+            break
+        case .denied:
+            break
+        case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
+        case .restricted:
+            break
+        case .authorizedAlways:
+            break
+        }
+    }
+    
+    
+    
+    
     @IBAction func CSMI(_ sender: UIButton) {
         UIApplication.shared.open(URL(string:"https://cimhs.com")! as URL, options: [:], completionHandler:nil)
         
@@ -53,4 +90,19 @@ class CounselingVC: UIViewController {
     }
     */
 
+} // class end
+
+
+extension ViewController: CLLocationManagerDelegate {
+
+func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    let regionInMeters: Double = 10000
+    guard let location = locations.last else { return }
+    let center = CLLocationCoordinate2D(latitude: regionInMeters, longitude: regionInMeters)
+    let region = MKCoordinateRegion.init(center: center, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+    mapView.setRegion(region, animated: true)
 }
+}
+
+func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+    checkLocationAuthorization() }
