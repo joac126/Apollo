@@ -7,12 +7,26 @@
 //
 
 import UIKit
-
+import MapKit
 class CounselingVC: UIViewController {
 
+    @IBOutlet weak var mapView: MKMapView!
+    
+    //memorial health lat and long
+    // 32.0303° N, 81.0888° W
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = CLLocationCoordinate2D(latitude: 32.0303, longitude: -81.0888)
+        mapView.addAnnotation(annotation)
+        
+        let region = MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
+        mapView.setRegion(region, animated: true)
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     
