@@ -9,7 +9,13 @@
 import UIKit
 
 class FourthViewController: UIViewController {
-
+    @IBAction func first(_ sender: UIButton) {
+    }
+    
+    @IBAction func second(_ sender: Any) {
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

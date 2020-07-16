@@ -22,28 +22,29 @@ class Hotline: UIViewController {
 }
 }
     
-//import UIKit
-//import MessageUI
-//
-//class TextingViewController: UIViewController, MFMessageComposeViewControllerDelegate {
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//    }
-//
-//    @IBAction func clicked(_ sender: Any) {
-//        if (MFMessageComposeViewController.canSendText()) {
-//            let controller = MFMessageComposeViewController()
-//            controller.body = "Message Body"
-//            controller.recipients = ["4151231234"]
-//            controller.messageComposeDelegate = self
-//            self.present(controller, animated: true, completion: nil)
-//        }
-//    }
-//
-//    func messageComposeViewController(_ controller: MFMessageComposeViewController!, didFinishWith result: MessageComposeResult) {
-//        self.dismiss(animated: true, completion: nil)
-//    }
-//}
-//
+import MessageUI
+
+class TextingViewController: UIViewController, MFMessageComposeViewControllerDelegate {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
+
+    @IBAction func textline(_ sender: Any) {
+    if 
+    (MFMessageComposeViewController.canSendText()) {
+            let controller = MFMessageComposeViewController()
+            controller.body = "Message Body"
+            controller.recipients = ["4151231234"]
+            controller.messageComposeDelegate = self
+            self.present(controller, animated: true, completion: nil)
+        }
+    }
+
+    func messageComposeViewController(_ controller: MFMessageComposeViewController!, didFinishWith result: MessageComposeResult) {
+        self.dismiss(animated: true, completion: nil)
+    }
+}
+
 //
 //
