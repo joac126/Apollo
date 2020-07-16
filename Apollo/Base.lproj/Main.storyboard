@@ -373,6 +373,7 @@
                                 <state key="normal" title="Suicide Prevention Hotline"/>
                                 <connections>
                                     <action selector="firstk:" destination="4rm-LC-g05" eventType="touchUpInside" id="guG-EF-8Zo"/>
+                                    <action selector="suic:" destination="4rm-LC-g05" eventType="touchUpInside" id="Q0s-RC-ixl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mux-fi-KXJ">
@@ -389,6 +390,7 @@
                                 <state key="normal" title="Crisis Textline"/>
                                 <connections>
                                     <action selector="text:" destination="4rm-LC-g05" eventType="touchUpInside" id="xbC-Eb-zMq"/>
+                                    <action selector="textline:" destination="vZ5-mI-cKB" eventType="touchUpInside" id="Koi-0H-Gsf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -398,6 +400,7 @@
                     <navigationItem key="navigationItem" id="mjQ-TP-3je"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dpd-Ek-0bL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="vZ5-mI-cKB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3479.7101449275365" y="-406.47321428571428"/>
         </scene>
