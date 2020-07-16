@@ -156,31 +156,37 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.74901960779999999" green="0.85882352939999995" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDj-3Z-0Ss">
-                                <rect key="frame" x="20" y="284" width="46" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="first:" destination="WMQ-6D-C62" eventType="touchUpInside" id="dqZ-0R-xqb"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4R-2C-20Y">
-                                <rect key="frame" x="43" y="377" width="71" height="30"/>
+                                <rect key="frame" x="21" y="377" width="115" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="NAMI Fundraiser"/>
                                 <connections>
                                     <action selector="second:" destination="WMQ-6D-C62" eventType="touchUpInside" id="FCs-ot-DPS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bF0-dL-TMa">
-                                <rect key="frame" x="117" y="505" width="46" height="30"/>
+                                <rect key="frame" x="68" y="505" width="144" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="SAVE Representative"/>
+                                <connections>
+                                    <action selector="third:" destination="WMQ-6D-C62" eventType="touchUpInside" id="JTa-mf-eg7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkf-Nu-7CK">
-                                <rect key="frame" x="154" y="616" width="46" height="30"/>
+                                <rect key="frame" x="124" y="616" width="107" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="7 Cups Listener"/>
+                                <connections>
+                                    <action selector="fourth:" destination="WMQ-6D-C62" eventType="touchUpInside" id="CLs-XQ-rNc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDj-3Z-0Ss">
+                                <rect key="frame" x="68" y="256" width="112" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Crisis Counselor"/>
+                                <connections>
+                                    <action selector="first:" destination="WMQ-6D-C62" eventType="touchUpInside" id="dqZ-0R-xqb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.16078431369999999" green="0.25098039220000001" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
