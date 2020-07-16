@@ -332,16 +332,16 @@
                                     <action selector="last:" destination="v3g-uW-WiK" eventType="touchUpInside" id="ezT-cA-Kj9"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2020-07-16 at 12.01.05 PM" translatesAutoresizingMaskIntoConstraints="NO" id="gAk-h6-FHj">
-                                <rect key="frame" x="87" y="115" width="240" height="381"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="gAk-h6-FHj">
+                                <rect key="frame" x="87" y="0.0" width="240" height="381"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GVa-NP-K0f">
-                                <rect key="frame" x="75" y="538" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="MVN-mz-E8m">
+                                <rect key="frame" x="0.0" y="252" width="413" height="424"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MVN-mz-E8m">
-                                <rect key="frame" x="87" y="251" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-2" translatesAutoresizingMaskIntoConstraints="NO" id="GVa-NP-K0f">
+                                <rect key="frame" x="66" y="572" width="282" height="270"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -502,7 +502,9 @@
         <segue reference="Ymr-IW-RsF"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="Screen Shot 2020-07-16 at 12.01.05 PM" width="916" height="1182"/>
+        <image name="Image" width="418" height="1032"/>
+        <image name="Image-1" width="414" height="1012"/>
+        <image name="Image-2" width="916" height="1182"/>
         <image name="apollo symbol" width="225" height="225"/>
         <image name="apollo symbol without background" width="225" height="225"/>
         <image name="backward.end.fill" catalog="system" width="128" height="102"/>
