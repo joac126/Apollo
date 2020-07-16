@@ -329,7 +329,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Suicide Prevention Hotline"/>
                                 <connections>
-                                    <action selector="sp:" destination="4rm-LC-g05" eventType="touchUpInside" id="ohm-MC-Qj0"/>
+                                    <action selector="firstk:" destination="4rm-LC-g05" eventType="touchUpInside" id="guG-EF-8Zo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mux-fi-KXJ">
@@ -337,7 +337,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="National Alliance on Mental Illness Hotline"/>
                                 <connections>
-                                    <action selector="nami:" destination="4rm-LC-g05" eventType="touchUpInside" id="rpR-P4-224"/>
+                                    <action selector="nami:" destination="4rm-LC-g05" eventType="touchUpInside" id="Ftu-dC-ovz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUI-uY-P79">

@@ -8,19 +8,32 @@
 
 import UIKit
 
-class Hotline: UIViewController {
 
-    @IBAction func sp(_ sender: UIButton) {guard let number = URL(string: "tel://" + "18002738255") else { return }
-                UIApplication.shared.open(number)
-            }
-            override func viewDidLoad() {
-                super.viewDidLoad()
+class Hotline: UIViewController {
+    
+    @IBAction func firstk(_ sender: UIButton) {makePhoneCall(phoneNumber: "18002738255")
     }
     
-    @IBAction func nami(_ sender: UIButton) {guard let number = URL(string: "tel://" + "18009506264") else { return }
-        UIApplication.shared.open(number)
-}
-}
+    @IBAction func nami(_ sender: UIButton) {makePhoneCall(phoneNumber: "18009506264")
+    }
+    
+    func makePhoneCall(phoneNumber: String) {
+
+        if let phoneURL = NSURL(string: ("tel://" + phoneNumber)) {
+
+            let alert = UIAlertController(title: ("Call " + phoneNumber + "?"), message: nil, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Call", style: .default, handler: { (action) in
+                UIApplication.shared.open(phoneURL as URL, options: [:], completionHandler: nil)
+            }))
+
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    }
+    
+
+  
     
 import MessageUI
 
