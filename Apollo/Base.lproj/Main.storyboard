@@ -377,7 +377,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="suicHot:" destination="4rm-LC-g05" eventType="touchUpInside" id="D9v-mx-tuk"/>
+                                    <action selector="sui:" destination="4rm-LC-g05" eventType="touchUpInside" id="UAG-hx-l4m"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mux-fi-KXJ">
@@ -388,9 +388,6 @@
                                 <state key="normal" title="National Alliance on Mental Illness Hotline">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="nami:" destination="4rm-LC-g05" eventType="touchUpInside" id="Ftu-dC-ovz"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUI-uY-P79">
                                 <rect key="frame" x="129" y="547" width="154" height="47"/>
@@ -437,6 +434,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.83687204869999998" blue="0.55986554980000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="Nkd-W5-z1p"/>
+                        <connections>
+                            <outlet property="sui" destination="MzQ-KE-hh9" id="wwy-eg-rA4"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="mjQ-TP-3je"/>
                 </viewController>
