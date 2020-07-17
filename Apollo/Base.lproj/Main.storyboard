@@ -377,7 +377,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="sui:" destination="4rm-LC-g05" eventType="touchUpInside" id="UAG-hx-l4m"/>
+                                    <action selector="sui:" destination="4rm-LC-g05" eventType="touchUpInside" id="ueT-hb-8pt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mux-fi-KXJ">
@@ -388,6 +388,9 @@
                                 <state key="normal" title="National Alliance on Mental Illness Hotline">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="nami:" destination="4rm-LC-g05" eventType="touchUpInside" id="4EA-N3-MFJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUI-uY-P79">
                                 <rect key="frame" x="129" y="547" width="154" height="47"/>
@@ -398,7 +401,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="text:" destination="4rm-LC-g05" eventType="touchUpInside" id="xbC-Eb-zMq"/>
+                                    <action selector="text:" destination="4rm-LC-g05" eventType="touchUpInside" id="pIs-Pq-2Lu"/>
                                     <action selector="textline:" destination="vZ5-mI-cKB" eventType="touchUpInside" id="Koi-0H-Gsf"/>
                                 </connections>
                             </button>
@@ -424,7 +427,7 @@
                                 <color key="textColor" red="0.0078431372550000003" green="0.16862745100000001" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By clicking the button above, you will be calling the National Suicide Prevention Hotline: 1-800-273-8255." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kay-aC-38R">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kay-aC-38R">
                                 <rect key="frame" x="35" y="223" width="343" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
@@ -435,6 +438,7 @@
                         <color key="backgroundColor" red="1" green="0.83687204869999998" blue="0.55986554980000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="Nkd-W5-z1p"/>
                         <connections>
+                            <outlet property="label1" destination="kay-aC-38R" id="Bcp-pk-QOv"/>
                             <outlet property="sui" destination="MzQ-KE-hh9" id="wwy-eg-rA4"/>
                         </connections>
                     </view>

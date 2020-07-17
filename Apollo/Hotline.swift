@@ -8,41 +8,29 @@
 
 import UIKit
 
-class Hotline: UIViewController {
 
-    @IBAction func sui(_ sender: Any) {
 
+
+class Hotline: UIViewController{
+
+@IBAction func sui(_ sender: UIButton) {
+}
+
+    @IBOutlet weak var label1: UILabel!
     
+    @IBAction func nami(_ sender: UIButton)
+    {
+    let suichotline = "testing"
+        label1.text = suichotline
+    }
     
-func dialNumber(number : String) {
 
- if let url = URL(string: "tel://\(number)"),
-   UIApplication.shared.canOpenURL(url) {
-      if #available(iOS 10, *) {
-        UIApplication.shared.open(url, options: [:], completionHandler:nil)
-       } else {
-           UIApplication.shared.openURL(url)
-       }
-   } else {
-            // add error message here
-   }
-
-        }
-
-dialNumber(number: "+2025794610")
-
-
-//func makeAPhoneCall()  {
-//    let url: NSURL = URL(string: "TEL://1234567890")! as NSURL
-//    UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
-//}
-//// function call: [Used anywhere in your code]
-//        self.makeAPhoneCall() {
-//
-//        }
-//
-//}
-//}
-
+    @IBAction func text(_ sender: UIButton) {
     }
 }
+
+
+    
+
+
+
