@@ -10,21 +10,20 @@ import UIKit
 
 class Hotline: UIViewController {
     
-    
-    @IBAction func suic(_ sender: UIButton) {
+    @IBAction func suicHot(_ sender: UIButton) {
+        guard let number = URL(string: "tel://" + "9122471151") else { return }
+        UIApplication.shared.open(number)
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    
+    
 }
 
-private func callNumber(phoneNumber:String) {
- 
-    
-    
-  if let phoneCallURL = URL(string: "tel://938)") {
-    let application:UIApplication = UIApplication.shared
-    if (application.canOpenURL(phoneCallURL)) {
-        application.open(phoneCallURL, options: [:], completionHandler: nil)
-    }
-  }
-}
+
+
 
 
