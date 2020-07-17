@@ -10,8 +10,8 @@ import UIKit
 
 class Hotline: UIViewController {
     
-    @IBAction func suicHot(_ sender: UIButton) {
-        guard let number = URL(string: "tel://" + "9122471151") else { return }
+    @IBAction func suicHot(_ sender: Any) {
+        guard let number = URL(string: "tel://" + "2025794610") else { return }
         UIApplication.shared.open(number)
     }
     
@@ -22,7 +22,6 @@ class Hotline: UIViewController {
     
     
 }
-
 
 
 
