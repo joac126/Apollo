@@ -10,22 +10,20 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class CounselingVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+class CounselingVC: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     
-   let locationManager = CLLocationManager()
-   let regionInMeters: Double = 10000
+    let locationManager = CLLocationManager()
+    let regionInMeters: Double = 10000
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        mapView.delegate = self
         checkLocationServices()
-
         
     }
     
-    func setupLocationManager() {
+    func setUpLocationManager() {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
@@ -37,15 +35,18 @@ class CounselingVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelega
         }
     }
     
-    func checkLocationServices() {
-         if CLLocationManager.locationServicesEnabled() {
-            setupLocationManager()
-             checkLocationAuthorization()
-         } else {
-         
-         }
     
-     }
+    
+    
+    
+    func checkLocationServices() {
+        if CLLocationManager.locationServicesEnabled() {
+            setUpLocationManager()
+            checkLocationAuthorization()
+        } else {
+        
+        }
+    }
     
     func checkLocationAuthorization() {
         switch CLLocationManager.authorizationStatus() {
@@ -67,7 +68,6 @@ class CounselingVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelega
     
     
     
-    
     @IBAction func CSMI(_ sender: UIButton) {
         UIApplication.shared.open(URL(string:"https://cimhs.com")! as URL, options: [:], completionHandler:nil)
         
@@ -80,29 +80,22 @@ class CounselingVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelega
     @IBAction func third(_ sender: UIButton) { UIApplication.shared.open(URL(string:"BetterHelp.com")! as URL, options: [:], completionHandler: nil)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  
 
 } // class end
 
 
-extension ViewController: CLLocationManagerDelegate {
+extension CounselingVC: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.last else { return }
+        let center = CLLocationCoordinate2D(latitude: regionInMeters, longitude: regionInMeters)
+        let region = MKCoordinateRegion.init(center: center, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+        mapView.setRegion(region, animated: true)
+    }
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        checkLocationAuthorization()
+    }
 
-func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-    let regionInMeters: Double = 10000
-    guard let location = locations.last else { return }
-    let center = CLLocationCoordinate2D(latitude: regionInMeters, longitude: regionInMeters)
-    let region = MKCoordinateRegion.init(center: center, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
-    mapView.setRegion(region, animated: true)
-}
-}
 
-func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-    checkLocationAuthorization() }
+}
